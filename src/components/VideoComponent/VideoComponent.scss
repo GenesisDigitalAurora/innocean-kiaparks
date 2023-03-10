@@ -1,0 +1,106 @@
+@import '../../vars';
+
+#ViideoContainer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position: center center;
+    h1{
+        width: 70%;
+        max-width: 700px;
+        color: white;
+        margin: 0 auto;
+        padding: 100px 0;
+        text-align: center;
+    }
+    .image-bg{
+        opacity: 0.3;
+    }
+}
+
+#VideoModal{
+    width: 60%;
+    height: 450px;
+    text-align: center;
+    max-width: 900px;
+    background-color: black;
+    margin: 10% auto;
+    position: relative;
+    .btn-close{
+        color: $color-kia-white;
+        position: absolute;
+        top: -15px;
+        cursor: pointer;
+        right: -15px;
+        padding: 15px;
+        font-size: 14px;
+        background-color: black;
+    }
+    @media (max-width: $mobile-width) {
+        width: 95%;
+    }
+}
+#VideoComponent{
+    position: relative;
+    width: 50%;
+    max-width: 900px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    @media (max-width: $mobile-width) {
+        width: 90%;
+        height: 300px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .hover-video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.2);
+        .btn-video{
+            background: none;
+            display: block;
+            width: 70px;
+            margin: 5% auto;
+            text-align: center;
+            cursor: pointer;
+            p{
+                font-size: 14px;
+                color: $color-kia-white;
+                padding-top: 20px;
+            }
+        }
+        .main-slogan{
+            width: 50%;
+            max-width: 600px;
+            position: absolute;
+            bottom: 10%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            color: $color-kia-white;
+            text-align: center;
+            display: block;
+            h1{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 15px;
+                padding: 10px 0 20px 0;
+            }
+            p{
+                font-size: 15px;
+            }
+            @media (max-width: $mobile-width) {
+                width: 90%;
+            }
+        }
+    }
+}

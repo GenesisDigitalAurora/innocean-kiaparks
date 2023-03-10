@@ -1,0 +1,23 @@
+@import '../../vars';
+
+#NosotrosMainContainer{
+    margin-top: 91px;
+    // @media (max-width: $mobile-width) {
+    // }
+    #MainContainer{
+        width: 95%;
+        max-width: 1400px;
+        .intro-text{
+            padding: 50px 0 0 0;
+            text-align: center;
+            h1{
+                font-size: 35px;
+                padding-bottom: 40px;
+            }
+            P{
+                padding-bottom: 20px;
+                font-size: 19px;
+            }
+        }
+    }
+}

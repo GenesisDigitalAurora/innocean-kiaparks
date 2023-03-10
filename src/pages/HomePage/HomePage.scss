@@ -1,0 +1,72 @@
+@import '../../vars';
+
+#HomeMainContainer{
+    margin-top: 91px;
+    #MainGallery{
+        display: block;
+        width: 100%;
+        height: calc( 100vh - 150px );
+        margin: 50px auto 0 auto;
+        position: relative;
+        div, .rsis-container{
+            background-position: center center;
+            left: 0 !important;
+            right: 0 !important;
+            margin: 0 auto !important;
+            text-align: center !important;
+            button{
+                border-radius: 0 !important;
+                width: 30px !important;
+                height: 3px !important;
+            }
+        }
+        .more-btn{
+            position: absolute;
+            background-color: white;
+            padding: 10px 20px;
+            bottom: 50px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            border: none;
+            font-family: kiaM;
+            &:hover{
+                color: black;
+                opacity: 0.8;
+            }
+        }
+        @media (max-width: $mobile-width) {
+            height: 400px;
+            background-position: center center !important;
+            // .more-btn{
+            //     bottom: 30px;
+            //     width: 60%;
+            //     text-decoration: underline;
+            //     background: none;
+            //     color: white;
+                
+            // }
+        }
+    }
+    #MainContainer{
+        width: 95%;
+        max-width: 1400px;
+        padding: 50px 0;
+        #LinkToContent{
+            display: flex;
+            flex-wrap: wrap;
+            .btn-linkto{
+                background-color: white;
+                width: 25%;
+                padding: 25px;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0.8;
+                }
+                @media (max-width: $mobile-width) {
+                    width: 100%;
+                }
+            }   
+        }
+    }
+}

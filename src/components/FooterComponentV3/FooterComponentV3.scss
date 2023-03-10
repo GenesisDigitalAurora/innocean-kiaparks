@@ -1,0 +1,172 @@
+@import '../../vars';
+
+footer{
+    background-color: $color-kia-blue;
+    padding: 45px 30px;
+    display: block;
+    #FooterContV3{
+        width: 100%;
+        max-width: 1440px;
+        display: block;
+        margin: 0 auto;
+        a{
+            color: $color-kia-white;
+            text-decoration: none;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        #FooterLogo{
+            display: block;
+            width: 70px;
+            padding-bottom: 40px;
+        }
+        .select-lang{
+            display: flex;
+            color: white;
+            width: 150px;
+            margin: 0 0 0 auto;
+            padding-bottom: 20px;
+            button{
+                padding: 0 10px !important;
+                margin: 0 !important;
+                text-align: center !important;
+                cursor: pointer !important;
+                &:hover{
+                    text-decoration: underline;
+                }
+                &:disabled{
+                    cursor: default !important;
+                    opacity: 0.5;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .copyright{
+            color: $color-kia-gray;
+            text-align: right;
+            line-height: 20px;
+            margin: 0 0 0 auto;
+            padding: 0;
+            font-size: 12px;
+            @media (max-width: $mobile-width) {
+                width: 100%;
+                font-size: 12px;
+                text-align: left;
+            }
+        }
+        #FooterPanels{
+            display: flex;
+            @media (max-width: $mobile-width) {
+                display: block;
+            }
+            #FooterPanelLeft{
+                padding-right: 20px;
+                width: 20%;
+                @media (max-width: $mobile-width) {
+                    width: 100%;
+                }
+                ul{
+                    li{
+                        padding: 0 0 18px 0;
+                        a{  
+                            font-family: "kiaB";
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .info-country{
+                    padding: 30px 0;
+                    font-size: 14px;
+                    color: $color-kia-gray;
+                    span{
+                        color: $color-kia-white;
+                    }
+                }
+                .info_sns{
+                    display: block;
+                    margin-top: 0;
+                    margin-right: 0;
+                    padding-bottom: 20px;
+                    text-align: left;
+                    .sns_spr {
+                        vertical-align: middle;
+                        margin-right: 10px;
+                        display: inline-block;
+                        background-position: 0 0;
+                        width: 24px;
+                        height: 24px;
+                        text-indent: -999px;
+                        background-image: url(../../assets/images/spr_sns.webp);
+                        &.spr_linkedin { background-position: -201px 0; }
+                        &.spr_twitter { background-position: -25px 0; }
+                        &.spr_twitter { background-position: -25px 0; }
+                        &.spr_youtube { background-position: -75px 0; }
+                        &.spr_instagram { background-position: -150px 0; }
+                    }
+                }
+            }
+            #FooterPanelRight{
+                width: 80%;
+                @media (max-width: $mobile-width) {
+                    display: block;
+                    width: 100%;
+                    margin-top: 40px;
+                }
+                button{
+                    border: none;
+                    display: block;
+                    width: 100%;
+                    padding: 0;
+                    margin: 0;
+                    text-align: left;
+                    color: $color-kia-white;
+                    margin-bottom: 18px;
+                    font-family: kiaB;
+                    font-size: 14px;
+                    cursor: default;
+                    background: none;
+                    @media (max-width: $mobile-width) {
+                        margin-bottom: 0px;
+                        padding: 20px 0;
+                        // border-top: 1px solid $color-kia-gray;
+                        // border-bottom: 1px solid $color-kia-gray;
+                        // background: url(../../assets/images/footer-arrow-m.webp) no-repeat 98% 50%;
+                        background-size: 12px 12px;
+                        cursor: pointer;
+                        &:focus + ul{
+                            display: block;
+                        }
+                    }
+                }
+                .rack-links{
+                    width: 25%;
+                    padding-right: 10px;
+                    @media (max-width: $mobile-width) {
+                        width: 100%;
+                    }
+                }
+                ul{
+                    @media (max-width: $mobile-width) {
+                        display: none;
+                    }
+                    li{
+                        margin-top: 4px;
+                        padding: 0 0 10px 0;
+                        a{
+                            font-size: 14px;
+                            color: #fff;
+                            opacity: .6;
+                            cursor: pointer;
+                            &:hover{
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

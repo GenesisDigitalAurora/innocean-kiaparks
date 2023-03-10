@@ -1,0 +1,130 @@
+
+$color-kia-blue: #05141f;
+$color-kia-white: #ffffff;
+$color-kia-gray: #999;
+$color-kia-gray2: #f6f8f8;
+
+$mobile-width: 800px;
+$desktop-width: 1600px;
+
+.text-justify{ text-align: justify !important;}
+.text-right{ text-align: right !important;}
+.text-left{ text-align: left !important;}
+.text-center{ text-align: center !important;}
+
+img{
+  width: 100%;
+  display: block;
+}
+.__rcs-handle-root{
+  cursor: grab !important;
+}
+.display-flex{
+  display: flex !important;
+  @media (max-width: $mobile-width) {
+    display: block !important;
+  }
+}
+.col-6{
+  width: 50%;
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    text-align: center !important;
+    padding: 20px 0 !important;
+  }
+}
+
+*, *:focus{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: none;
+}
+
+.container{
+  width: 100%;
+  max-width: 990px;
+  display: block;
+  margin: 0 auto;
+}
+
+.more-btn{
+  color: black;
+  font-size: 17px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: $color-kia-white;
+  border: 1px solid $color-kia-gray;
+  &:hover{
+      color: $color-kia-white;
+      background-color: $color-kia-blue;
+  }
+}
+
+@font-face {
+  font-family: kiaB;
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+  src: url('assets/fonts/KiaSignatureBold.eot');
+  src: url('assets/fonts/KiaSignatureBold.eot?#iefix') format('embedded-opentype'), url('assets/fonts/KiaSignatureBold.woff2') format('woff2'), url('assets/fonts/KiaSignatureBold.woff') format('woff')
+}
+
+@font-face {
+  font-family: kiaM;
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+  src: url('assets/fonts/KiaSignatureRegular.eot');
+  src: url('assets/fonts/KiaSignatureRegular.eot?#iefix') format('embedded-opentype'), url('assets/fonts/KiaSignatureRegular.woff2') format('woff2'), url('assets/fonts/KiaSignatureRegular.woff') format('woff')
+}
+
+@font-face {
+  font-family: Noto Sans Bold;
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+  src: url('assets/fonts/NotoSans-Bold.ttf') format('truetype');
+  src: url('assets/fonts/NotoSans-Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: Noto Sans;
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+  src: url('assets/fonts/NotoSans-Regular.ttf') format('truetype');
+  src: url('assets/fonts/NotoSans-Regular.ttf') format('truetype')
+}
+
+
+@font-face {
+  font-family: "KiaSignatureFix";
+  font-style: normal;
+  font-weight: 100;
+  src: url("assets/fonts/KiaSignatureFixLight.woff2") format("woff2"),url("assets/fonts/KiaSignatureFixLight.woff") format("woff");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "KiaSignatureFix";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/KiaSignatureFixRegular.woff2") format("woff2"),url("assets/fonts/KiaSignatureFixRegular.woff") format("woff");
+  font-display: swap
+}
+
+@font-face {
+  font-family: "KiaSignatureFix";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/KiaSignatureFixBold.woff2") format("woff2"),url("assets/fonts/KiaSignatureFixBold.woff") format("woff");
+  font-display: swap
+}
