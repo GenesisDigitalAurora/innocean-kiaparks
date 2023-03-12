@@ -316,7 +316,7 @@ export const kiaparks_ecuador01 = {
         },
         {
             net: 'twitter',
-            url: 'https://facebook.com/Kiaworldwideofficial/?mibextid=LQQJ4d'
+            url: 'https://twitter.com/kia_worldwide?s=11&t=dKuFEbCpVcgQmdG9RjH1ug'
         }
     ]
 }

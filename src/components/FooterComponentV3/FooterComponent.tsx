@@ -30,7 +30,7 @@ export const FooterV3 = ({blockLinks, lang, chooselang, snLinks}:FooterInterface
                     blockLinks.map( (link,i) => {
                       return(
                         <li key={`${i}`}>
-                          <a href={`${link.url}?utm_source=micrositio&utm_medium=menunavegacion&utm_campaign=kiaparks_organic&utm_content=ene23`} target="_blank" rel="noopener noreferrer">
+                          <a href={`${link.url}?utm_source=micrositio&utm_medium=menunavegacion&utm_campaign=kiaparks_organic&utm_content=ene23`} target={`${(link.url.includes('http'))?'_blank':'_self'}`} rel="noopener noreferrer">
                             <strong>
                             {
                               (lang === 'es')

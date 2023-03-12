@@ -23,23 +23,23 @@ export const NosotrosPage = ({initialParks, lang, chooseLang }: NosotrosInterfac
       titleEng: 'Our Inspiration',
     },
     { 
-      url: 'https://www.kia.com/cl/util/kia-global.html',
+      url: '/chile/ciudaddeportivauss',
       titleEsp: 'Kia Parks Chile',
       titleEng: 'Kia Parks Chile',
     },
 
     {
-      url: 'https://www.kia.com/ec/util/kia-global.html',
+      url: '/ecuador',
       titleEsp: 'Kia Parks Ecuador',
       titleEng: 'Kia Parks Ecuador',
     },
     {
-      url: 'https://kia.com.py',
+      url: '/paraguay/parquenuguasu',
       titleEsp: 'Kia Parks Paraguay',
       titleEng: 'Kia Parks Paraguay',
     },
     {
-      url: 'https://www.kia.com/pe/util/kia-global.html',
+      url: '/peru/puericultorio',
       titleEsp: 'Kia Parks Peru',
       titleEng: 'Kia Parks Peru',
     },
@@ -59,8 +59,8 @@ export const NosotrosPage = ({initialParks, lang, chooseLang }: NosotrosInterfac
         url: 'https://instagram.com/kia.worldwide?igshid=YmMyMTA2M2Y='
     },
     {
-        net: 'twitter',
-        url: 'https://facebook.com/Kiaworldwideofficial/?mibextid=LQQJ4d'
+      net: 'twitter',
+      url: 'https://twitter.com/kia_worldwide?s=11&t=dKuFEbCpVcgQmdG9RjH1ug'
     }
   ]
 

@@ -65,8 +65,8 @@ export const HomeEcuadorPage = ({lang, chooseLang}:lang) => {
           url: 'https://instagram.com/kia.worldwide?igshid=YmMyMTA2M2Y='
       },
       {
-          net: 'twitter',
-          url: 'https://facebook.com/Kiaworldwideofficial/?mibextid=LQQJ4d'
+        net: 'twitter',
+        url: 'https://twitter.com/kia_worldwide?s=11&t=dKuFEbCpVcgQmdG9RjH1ug'
       }
   ]
 
