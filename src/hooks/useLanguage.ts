@@ -54,28 +54,28 @@ export const useLanguage = () => {
     // document.cookie = `kiaparks_lang=${userLang}; domain=english.kiaparks.com; path=/`;
 
 
-    if (userLang !== 'es' && (subdomain === 'kiaparks' || subdomain === 'www')) {
-      window.location.href = `https://english.kiaparks.com${path}?redirect=1&lang=en`;
-    }
+    // if (userLang !== 'es' && (subdomain === 'kiaparks' || subdomain === 'www')) {
+    //   window.location.href = `https://english.kiaparks.com${path}?redirect=1&lang=en`;
+    // }
 
-    if (userLang === 'es' && subdomain === 'english') {
-      window.location.href = `https://kiaparks.com${path}?redirect=1&lang=es`;
-    }
+    // if (userLang === 'es' && subdomain === 'english') {
+    //   window.location.href = `https://kiaparks.com${path}?redirect=1&lang=es`;
+    // }
 
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////
 
-    // document.cookie = `kiaparks_lang=${userLang}; domain=stagingeng.kiaparks.com; path=/`;
-    // document.cookie = `kiaparks_lang=${userLang}; domain=staging.kiaparks.com; path=/`;
+    document.cookie = `kiaparks_lang=${userLang}; domain=stagingeng.kiaparks.com; path=/`;
+    document.cookie = `kiaparks_lang=${userLang}; domain=staging.kiaparks.com; path=/`;
 
 
-    // if (userLang !== 'es' && subdomain === 'staging') {
-    //   window.location.href = `https://stagingeng.kiaparks.com${path}?redirect=1&lang=en`;
-    // }
+    if (userLang !== 'es' && subdomain === 'staging') {
+      window.location.href = `https://stagingeng.kiaparks.com${path}?redirect=1&lang=en`;
+    }
 
-    // if (userLang === 'es' && subdomain === 'stagingeng') {
-    //   window.location.href = `https://staging.kiaparks.com${path}?redirect=1&lang=es`;
-    // }
+    if (userLang === 'es' && subdomain === 'stagingeng') {
+      window.location.href = `https://staging.kiaparks.com${path}?redirect=1&lang=es`;
+    }
    
     ////////////////////////////////////////////////////////////////////////////////////////////////////
     
