@@ -43,6 +43,8 @@ export const useLanguage = () => {
     return null;
   }
 
+  console.log('process.env:::',process.env.REACT_APP_DOMAIN_ES);
+
 
   const setLangByUser = (userLang: string) => {
 
@@ -50,46 +52,17 @@ export const useLanguage = () => {
     const subdomain = window.location.hostname.split('.')[0];
 
 
-    document.cookie = `kiaparks_lang=${userLang}; domain=kiaparks.com; path=/`;
-    document.cookie = `kiaparks_lang=${userLang}; domain=english.kiaparks.com; path=/`;
+    document.cookie = `kiaparks_lang=${userLang}; domain=${process.env.REACT_APP_DOMAIN_ES}.com; path=/`;
+    document.cookie = `kiaparks_lang=${userLang}; domain=${process.env.REACT_APP_DOMAIN_EN}.kiaparks.com; path=/`;
 
 
-    if (userLang !== 'es' && (subdomain === 'kiaparks' || subdomain === 'www')) {
-      window.location.href = `https://english.kiaparks.com${path}?redirect=1&lang=en`;
+    if (userLang !== 'es' && (subdomain === process.env.REACT_APP_DOMAIN_ES || subdomain === 'www')) {
+      window.location.href = `https://${process.env.REACT_APP_DOMAIN_EN}.kiaparks.com${path}?redirect=1&lang=en`;
     }
 
-    if (userLang === 'es' && subdomain === 'english') {
-      window.location.href = `https://kiaparks.com${path}?redirect=1&lang=es`;
+    if (userLang === 'es' && subdomain === process.env.REACT_APP_DOMAIN_EN) {
+      window.location.href = `https://${process.env.REACT_APP_DOMAIN_ES}.com${path}?redirect=1&lang=es`;
     }
-
-
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
-
-    // document.cookie = `kiaparks_lang=${userLang}; domain=stagingeng.kiaparks.com; path=/`;
-    // document.cookie = `kiaparks_lang=${userLang}; domain=staging.kiaparks.com; path=/`;
-
-
-    // if (userLang !== 'es' && subdomain === 'staging') {
-    //   window.location.href = `https://stagingeng.kiaparks.com${path}?redirect=1&lang=en`;
-    // }
-
-    // if (userLang === 'es' && subdomain === 'stagingeng') {
-    //   window.location.href = `https://staging.kiaparks.com${path}?redirect=1&lang=es`;
-    // }
-   
-    ////////////////////////////////////////////////////////////////////////////////////////////////////
-    
-    // document.cookie = `kiaparks_lang=${userLang}; domain=english.localhost; path=/`;
-    // document.cookie = `kiaparks_lang=${userLang}; domain=localhost; path=/`;
-
-
-    // if (userLang !== 'es' && subdomain === 'localhost') {
-    //   window.location.href = `http://english.localhost:3000${path}?redirect=1&lang=en`;
-    // }
-
-    // if (userLang === 'es' && subdomain === 'english') {
-    //   window.location.href = `http://localhost:3000${path}?redirect=1&lang=es`;
-    // }
 
     setLang(userLang);
   }
