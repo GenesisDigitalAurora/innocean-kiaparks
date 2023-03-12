@@ -9,7 +9,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 cp --recursive ./build s3://innocean-mx-stagging-kia-parks
-      - aws cloudfront create-invalidation --distribution-id E1V9GPO58JVC7B --path /\*
+      - aws s3 cp --recursive ./build s3://innocean-mx-kia-parks
+      - aws cloudfront create-invalidation --distribution-id E2MXNHFOM78VX2 --path /\*
 
         
