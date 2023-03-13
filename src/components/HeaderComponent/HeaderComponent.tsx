@@ -28,6 +28,7 @@ export const Header = ({lang, chooseLang}:lang) => {
   const onGoToSection = (section:string | null) => {
     navigate( `/${section}` );
     window.scrollTo(0, 0);
+    setHeaderStatusMobile(false);
   }
 
   useEffect(() => {
