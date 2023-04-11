@@ -6,6 +6,7 @@ import { NosotrosPage } from "../pages/NosotrosPage/NosotrosPage";
 import { HomeEcuadorPage } from "../pages/HomeEcuadorPage/HomeEcuadorPage";
 import { useLanguage } from "../hooks/useLanguage";
 import { Park } from "../interfaces";
+import { InauguracionesPage } from "../pages/InauguracionesPage/InauguracionesPage";
 
 export const AppRouter = () => {
   const kiaparks:Park[] = [kiaparks_chile_es, kiaparks_ecuador01, kiaparks_ecuador02, kiaparks_paraguay, kiaparks_lima];  
@@ -15,6 +16,7 @@ export const AppRouter = () => {
     <Routes>
         <Route path="/" element={ <HomePage lang={lang} chooseLang={setLangByUser} />} />
         <Route path="ecuador" element={ <HomeEcuadorPage lang={lang} chooseLang={setLangByUser} />} />
+        <Route path="inauguraciones" element={ <InauguracionesPage initialParks={ kiaparks } chooseLang={setLangByUser} lang={lang} />} />
         <Route path="vision" element={ <NosotrosPage initialParks={ kiaparks } chooseLang={setLangByUser} lang={lang} />} />
         <Route path="ecuador/galapagosbaltra" element={ <DetailPage parkInfo={ kiaparks[2] } lang={lang} chooseLang={setLangByUser} />} />
         <Route path="ecuador/parquedelamujeryelnino" element={ <DetailPage parkInfo={ kiaparks[1] } lang={lang} chooseLang={setLangByUser} />} />

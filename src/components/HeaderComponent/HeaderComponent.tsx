@@ -90,8 +90,8 @@ export const Header = ({lang, chooseLang}:lang) => {
 
                   
                   
-                  {/* <li className='nav-item'>
-                    <button>
+                  <li className='nav-item'>
+                    <button onClick={ () => onGoToSection('inauguraciones')}>
                       {
                         (lang === 'es')
                         ?<span>Inauguraciones</span>
@@ -99,7 +99,9 @@ export const Header = ({lang, chooseLang}:lang) => {
                       }
                     </button>
                   </li>
-                  <li className='nav-item faq-item'>
+
+
+                  {/* <li className='nav-item faq-item'>
                     <button>
                       {
                         (lang === 'es')
