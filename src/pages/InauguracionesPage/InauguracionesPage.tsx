@@ -331,13 +331,13 @@ export const InauguracionesPage = ({ initialParks, lang, chooseLang }: Inaugurac
       ];
     
       const urlList = [
-        'vision',
-        'chile/ciudaddeportivauss',
-        'ecuador/parquedelamujeryelnino',
-        'ecuador/galapagosbaltra',
-        'vision',
-        'paraguay/parquenuguasu',
-        'peru/puericultorio'
+        '/vision',
+        '/chile/ciudaddeportivauss',
+        '/ecuador/parquedelamujeryelnino',
+        '/ecuador/galapagosbaltra',
+        '/vision',
+        '/paraguay/parquenuguasu',
+        '/peru/puericultorio'
       ]
     
       const [descriptionText, setDescriptionText] = useState(urlList[0]);
