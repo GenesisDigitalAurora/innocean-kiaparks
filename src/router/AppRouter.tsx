@@ -16,7 +16,7 @@ export const AppRouter = () => {
     <Routes>
         <Route path="/" element={ <HomePage lang={lang} chooseLang={setLangByUser} />} />
         <Route path="ecuador" element={ <HomeEcuadorPage lang={lang} chooseLang={setLangByUser} />} />
-        {/* <Route path="inauguraciones" element={ <InauguracionesPage initialParks={ kiaparks } chooseLang={setLangByUser} lang={lang} />} /> */}
+        <Route path="inauguraciones" element={ <InauguracionesPage initialParks={ kiaparks } chooseLang={setLangByUser} lang={lang} />} />
         <Route path="vision" element={ <NosotrosPage initialParks={ kiaparks } chooseLang={setLangByUser} lang={lang} />} />
         <Route path="ecuador/galapagosbaltra" element={ <DetailPage parkInfo={ kiaparks[2] } lang={lang} chooseLang={setLangByUser} />} />
         <Route path="ecuador/parquedelamujeryelnino" element={ <DetailPage parkInfo={ kiaparks[1] } lang={lang} chooseLang={setLangByUser} />} />
