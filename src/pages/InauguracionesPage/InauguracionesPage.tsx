@@ -422,7 +422,7 @@ export const InauguracionesPage = ({ initialParks, lang, chooseLang }: Inaugurac
                         </div>
                     </div>
                     <div className="gallery-item">
-                        <h2>Ecuador - Galápgos</h2>
+                        <h2>Ecuador - Galápagos</h2>
                         <div className="gallery-cont">
                             <SimpleImageSlider
                                 width="100%"
