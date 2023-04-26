@@ -386,8 +386,8 @@ export const InauguracionesPage = ({ initialParks, lang, chooseLang }: Inaugurac
                     <div className="intro-text">
                         {
                             (lang === 'es')
-                                ? <p>Cada nuevo desarrollo de Kia Parks es una historia de colaboración entre Kia y un gobierno local, teniendo como objetivo el mejoramiento de la calidad de vida para la comunidad. Creemos que esto es digno de festejarse y cada que logramos inaugurar un nuevo desarrollo, hacemos una fiesta conmemorativa. Aquí se pueden ver algunos recuerdos de estos eventos y acompañarnos en el festejo.</p>
-                                : <p>Every new development by Kia Parks is a story of collaboration between Kia and a local government, with the aim of improving the quality of life for the community. We believe that this is worthy of celebration, and every time we inaugurate a new development, we hold a commemorative party. Here you can see some memories of these events and join us in the celebration.</p>
+                                ? <p>Kia Parks es la iniciativa regional activada por Kia, con el objetivo de crear un mundo mejor para todos. Hoy celebramos la recuperación de áreas urbanas abandonadas o descuidadas en países como: Chile, Paraguay, Perú y Ecuador. Cada proyecto inaugurado, es una comunidad con nuevas oportunidades de desarrollo. Te invitamos a ser testigo y recorrer nuestra galería con imágenes de esos momentos de celebración que nos llenan de orgullo y esperanza.</p>
+                                : <p>Kia Parks is the regional initiative activated by Kia, with the aim of creating a better world for all. Today we celebrate the recovery of abandoned or neglected urban areas in countries such as: Chile, Paraguay, Peru and Ecuador. Each inaugurated project is a community with new development opportunities. We invite you to witness and tour our gallery with images of those moments of celebration that fill us with pride and hope.</p>
                         }
 
                     </div>
