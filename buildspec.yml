@@ -1,3 +1,17 @@
+  # version: 0.2
+
+  # phases:
+  #   pre_build:
+  #     commands:
+  #       - npm install
+  #   build:
+  #     commands:
+  #       - npm run build
+  #   post_build:
+  #     commands:
+  #       - aws s3 cp --recursive ./build s3://innocean-mx-kia-parks
+  #       - aws cloudfront create-invalidation --distribution-id E2MXNHFOM78VX2 --path /\*
+
 version: 0.2
 
 phases:
