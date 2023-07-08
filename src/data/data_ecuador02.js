@@ -47,7 +47,7 @@ export const kiaparks_ecuador02 = {
     side: 0,
     country: "Ecuador",
     resumeCountry: "Galápagos, Ecuador",
-    location: "Canal de Itabaca, Puerto Baltra y Sta Cruz",
+    location: "Canal de Itabaca, Puerto Baltra y Santa Cruz",
     maps: [-0.6077938, -91.3122743],
     zoom: 8,
     resumeEsp: "Declaradas por la Unesco como “Patrimonio de la Humanidad” en 1979, y “Reserva de la Biosfera” en 1985, son conocidas por ser el hábitat de especies endémicas únicas, tales como: tortugas Galápagos, piqueros de patas azules, fragatas, iguanas, leones marinos, pingüinos, entre muchas otras. La principal intervención realizada en la Isla de Santa Cruz fue el reacondicionamiento de los puertos de Itabaca que reciben anualmente más de 292.000 turistas y residentes.",
